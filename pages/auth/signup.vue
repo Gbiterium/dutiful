@@ -163,6 +163,7 @@ export default {
       }
       try {
         this.loading = true;
+        if (this.check) {
         const response = await this.$axios.post("/auth/register/", {
           name: this.name,
           email: this.email,
@@ -171,8 +172,11 @@ export default {
         });
         if (response.status === 200) {
           Toast("Success", "Registration Successful", "success");
-          // this.$router.push('/auth/verify-email')
+        //   this.$router.push('/auth/verify-email')
         }
+    } else {
+        Toast("Error", 'Please accept terms and condition before you proceed', 'error')
+    }
       } catch (error) {
         if (error.response.data && error.response) {
           const keys = Object.keys(error.response.data.details);
