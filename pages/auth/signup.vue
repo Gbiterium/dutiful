@@ -4,7 +4,7 @@
   >
     <div class="col-md-6 col-lg-4">
       <div class="text-dark">Sign up for free!</div>
-      <div class="text-blue fs-36 font-weight-600">Get started</div>
+      <div class="text-blue font-recoleta fs-36 font-weight-600">Get started</div>
       <div class="my-4">
         <div class="d-flex align-items-center justify-content-between">
           <div
