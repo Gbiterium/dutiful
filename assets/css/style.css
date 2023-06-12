@@ -1,0 +1,163 @@
+@import url('./fonts.css');
+body,
+html {
+  font-family: 'Circular Std', Arial, Helvetica, sans-serif !important;
+  background: #ffff;
+  font-size: 16px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #63428E;
+  }
+
+/* Font Sizes */
+.fs-10 {
+    font-size: 10px !important;
+  }
+  .fs-12 {
+    font-size: 12px !important;
+  }
+  .fs-14 {
+    font-size: 14px !important;
+  }
+  .fs-16 {
+    font-size: 16px !important;
+  }
+  .fs-18 {
+    font-size: 18px !important;
+  }
+  .fs-20 {
+    font-size: 20px !important;
+  }
+  .fs-21 {
+    font-size: 21px !important;
+  }
+  .fs-22 {
+    font-size: 22px !important;
+  }
+  .fs-24 {
+    font-size: 24px !important;
+  }
+  .fs-28 {
+    font-size: 28px !important;
+  }
+  .fs-30 {
+    font-size: 30px !important;
+  }
+  .fs-36 {
+    font-size: 36px !important;
+  }
+  .fs-40 {
+    font-size: 40px !important;
+  }
+  .font-weight-500 {
+    font-weight: 500;
+  }
+  .font-weight-600 {
+    font-weight: 600;
+  }
+
+  /* Typography */
+.text-primary {
+    color: #603F8B !important;
+  }
+  .text-dark {
+    color: #686868 !important;
+  }
+  .text-darker {
+    color: #230B34 !important;
+  }
+  .text-blue {
+    color: #1E1E4B !important;
+  }
+  .text-black {
+    color: #000000 !important;
+  }
+  .text-white {
+    color: #ffff !important;
+  }
+  .text-light {
+    color: #A3B1BF !important;
+  }
+  .text-light-purple {
+    color: #A16AE8 !important;
+  }
+  .text-grey {
+    color: #B6B6E5;
+  }
+  .bg-purple {
+    background: #532F82;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .border-1 {
+    border-radius: 6px;
+    border: 1px solid #603F8B;
+    z-index: 1001;
+  }
+
+/* Buttons  */
+.btn {
+    border-radius: 6px;
+  
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .btn.btn-primary {
+    background: #532F82;
+    box-shadow: 2px 8px 8px rgba(86, 86, 86, 0.25);
+    border: none;
+    color: #ffffff;
+  }
+  .btn.btn-primary:not(:disabled):hover,
+  .btn.btn-primary:not(:disabled):focus,
+  .btn.btn-primary:not(:disabled):active {
+    background: #532F82;
+  }
+  .btn.btn-outline-primary {
+    background: #fff;
+    border: 2px solid #532F82;
+    color: #603F8B;
+  }
+  .btn.btn-outline-primary:not(:disabled):hover {
+    background: #532F82;
+    border-color: #532F82;
+    color: #fff;
+  }
+  .btn.btn-outline-primary:not(:disabled):hover .iconify,
+  .btn.btn-outline-primary:not(:disabled):hover svg {
+    color: #fff;
+  }
+  .btn.btn-outline-primary:not(:disabled):hover svg path {
+    fill: #fff;
+  }
+  .btn.btn-outline-primary:not(:disabled):focus,
+  .btn.btn-outline-primary:not(:disabled):active {
+    background: #0c5791;
+    border-color: #0c5791;
+    color: #fff;
+  }
+
+  .form-control {
+    background: #F8FAFD;
+border: 2px solid #E7EAF1;
+border-radius: 6px;
+height: 56px;
+  }
+  .text-decoration-underline{
+    text-decoration: underline;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  .font-recoleta {
+    font-family: 'Recoleta Alt';
+  }
+  .font-weight-light {
+    font-weight: 300;
+  }

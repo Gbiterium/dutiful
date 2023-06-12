@@ -1,0 +1,20 @@
+/*Circular_Std  Font  */
+@font-face {
+    font-family: 'Circular Std';
+    src: url('../fonts/circular_std/CircularStd-Book.woff2') format('woff2'),
+         url('../fonts/circular_std/CircularStd-Book.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+
+/*Recoleta Font */
+@font-face {
+    font-family: 'Recoleta Alt';
+    src: url('../fonts/recoleta/Recoleta-Medium.woff2') format('woff2'),
+         url('../fonts/recoleta/Recoleta-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+
+}
