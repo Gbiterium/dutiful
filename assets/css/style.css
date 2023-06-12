@@ -98,7 +98,6 @@ hr {
   .border-1 {
     border-radius: 6px;
     border: 1px solid #603F8B;
-    z-index: 1001;
   }
 
 /* Buttons  */

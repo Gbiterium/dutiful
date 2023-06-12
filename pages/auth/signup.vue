@@ -22,7 +22,7 @@
             >
             <div class="icon-abs" v-if="active">
               <span
-                class="iconify text-primary fs-24"
+                class="iconify text-primary fs-30"
                 data-icon="tabler:circle-check-filled"
               ></span>
             </div>
@@ -42,7 +42,7 @@
             >
             <div class="icon-abs" v-if="vendor">
               <span
-                class="iconify text-primary fs-24"
+                class="iconify text-primary fs-30"
                 data-icon="tabler:circle-check-filled"
               ></span>
             </div>
@@ -202,13 +202,11 @@ export default {
 }
 .register {
   position: relative;
-  z-index: 1001;
 }
 .icon-abs {
   position: absolute;
-  top: -10px;
-  right: -10px;
-  z-index: 1;
+  top: -18px;
+  right: -15px;
 }
 .disable {
   color: #b1bdca !important;
