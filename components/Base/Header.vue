@@ -42,7 +42,7 @@
           <button class="btn btn-outline-primary px-5 py-2 fs-20 font-weight-500" @click.prevent="$router.push('/auth/signup')">Sign up</button>
         </div>
         <div v-else class="d-flex align-items-center justify-content-center">
-          <button class="btn btn-outline-primary px-5 py-2 fs-20 font-weight-500" @click.prevent="logout">Logout</button>
+          <button class="btn btn-outline-primary ml-5 px-5 py-2 fs-20 font-weight-500" @click.prevent="logout">Logout</button>
         </div>
       </div>
     </div>
