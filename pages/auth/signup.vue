@@ -221,4 +221,14 @@ label {
   color: #603f8b;
   font-size: 18px;
 }
+@media screen and (max-width: 767px) {
+    .register span {
+        font-size: 14px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .register span {
+        font-size: 16px !important;
+    }
+}
 </style>
