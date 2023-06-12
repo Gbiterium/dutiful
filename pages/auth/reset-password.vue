@@ -1,6 +1,6 @@
 <template>
   <div class="reset-page d-flex align-items-center justify-content-center">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
         <div class="text-blue fs-36 font-recoleta font-weight-600">
             Reset password
       </div>

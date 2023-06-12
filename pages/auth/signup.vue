@@ -2,13 +2,13 @@
   <div
     class="signup-page d-flex align-items-center justify-content-center py-5"
   >
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="text-dark">Sign up for free!</div>
       <div class="text-blue fs-36 font-weight-600">Get started</div>
       <div class="my-4">
         <div class="d-flex align-items-center justify-content-between">
           <div
-            class="border-1 py-4 px-3 register pointer"
+            class="border-1 py-4 px-3 register pointer mr-2"
             :class="[!active ? 'disable' : '']"
             @click.prevent="user"
           >
@@ -17,7 +17,7 @@
               data-icon="solar:user-linear"
               :class="[!active ? 'disable2' : '']"
             ></span>
-            <span class="text-darker fs-20" :class="[!active ? 'disable2' : '']"
+            <span class="text-darker fs-18" :class="[!active ? 'disable2' : '']"
               >Regular user</span
             >
             <div class="icon-abs" v-if="active">
@@ -37,7 +37,7 @@
               :class="[!vendor ? 'disable2' : '']"
               data-icon="clarity:store-solid"
               ></span>
-            <span class="text-darker fs-20" :class="[!vendor ? 'disable2' : '']"
+            <span class="text-darker fs-18" :class="[!vendor ? 'disable2' : '']"
               >Service provider</span
             >
             <div class="icon-abs" v-if="vendor">
@@ -172,7 +172,7 @@ export default {
         });
         if (response.status === 200) {
           Toast("Success", "Registration Successful", "success");
-        //   this.$router.push('/auth/verify-email')
+          this.$router.push('/auth/login')
         }
     } else {
         Toast("Error", 'Please accept terms and condition before you proceed', 'error')

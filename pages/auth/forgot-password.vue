@@ -1,6 +1,6 @@
 <template>
   <div class="forget-password d-flex align-items-center justify-content-center">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div v-if="!email_sent">
       <div class="mb-5">
         <span class="arrow-icon p-2 pointer" @click.prevent="$router.go(-1)">
@@ -21,11 +21,11 @@
                 >
         <label>Email</label>
         <input v-model="email" type="text" class="form-control" />
-        </ValidationProviderWrapper>
         <span
           class="iconify fs-20 text-primary icon-abs text-primary"
           data-icon="ic:outline-email"
         ></span>
+        </ValidationProviderWrapper>
       </div>
       <div class="my-5">
         <button class="btn btn-primary py-3 w-100" :disabled="loading" @click.prevent="sendEmail">Send email <b-spinner

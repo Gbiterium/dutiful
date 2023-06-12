@@ -46,6 +46,9 @@ export default {
   css: [
     '@/assets/css/all.css'
   ],
+  router: {
+    middleware: ['route-guard']
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -71,6 +74,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    'cookie-universal-nuxt',
   ],
   bootstrapVue: {
     // Install the `IconsPlugin` plugin (in addition to `BootstrapVue` plugin)

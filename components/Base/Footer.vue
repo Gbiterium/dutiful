@@ -33,7 +33,7 @@
         </div>
         </div>
         <hr class="mt-4" />
-        <div class="d-flex align-items-center justify-content-between">
+        <div class="d-md-flex align-items-center justify-content-between">
         <div class="my-3 d-flex align-items-center">
           <span class="text-white font-weight-500 fs-18">Follow us</span>
           <span class="iconify text-white fs-24 ml-3" data-icon="basil:facebook-solid"></span>
@@ -49,11 +49,11 @@
         </div>
         </div>
         <hr />
-        <div class="mt-3 d-flex align-items-center">
+        <div class="mt-3 d-md-flex align-items-center">
           <span class="text-white fs-18 mr-lg-5">©  {{ new Date().getFullYear() }} Dutiful®</span>
           <div class="d-flex align-items-center pl-lg-5">
-            <span class="text-grey mr-3">Terms of Service</span>
-            <span class="text-grey mr-3">Privacy policy</span>
+            <span class="text-grey mr-2 mr-md-3">Terms of Service</span>
+            <span class="text-grey mr-2 mr-md-3">Privacy policy</span>
             <span class="text-grey">Disclaimer</span>
           </div>
         </div>
@@ -78,5 +78,10 @@ li{
 }
 .footer-container {
   padding: 0px 100px;
+}
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 0px 20px; 
+    }
 }
 </style>

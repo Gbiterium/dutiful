@@ -1,6 +1,6 @@
 <template>
   <div class="login-page">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="text-dark">Jump right back in</div>
       <div class="text-blue fs-36 font-recoleta font-weight-600">Login</div>
       <div class="my-4">
@@ -58,7 +58,7 @@
 </template>
 
 <script>
-import Toast from "@/helpers/Toast";
+import { mapActions } from 'vuex'
 export default {
   layout: "default",
   data() {
@@ -72,6 +72,7 @@ export default {
     window.scrollTo(0, 0);
   },
   methods: {
+    ...mapActions('auth', ['LOGIN_USER']),
     async checkFormValidity() {
       const result = await this.$refs.form.validate();
       return result;
@@ -84,13 +85,10 @@ export default {
       }
       try {
         this.loading = true;
-        const response = await this.$axios.post("/auth/login/", {
+        const response = await this.LOGIN_USER({
           email: this.email,
           password: this.password,
         });
-        if (response.status === 200) {
-          Toast("Success", "Login Successful", "success");
-        }
       } catch (error) {
         console.log(error)
       } finally {

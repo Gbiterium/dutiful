@@ -1,6 +1,6 @@
 <template>
   <div class="verify-page d-flex align-items-center justify-content-center">
-    <div class="col-md-4">
+    <div class="col-md-6 col-lg-4">
       <div class="d-flex align-items-center justify-content-center otp-input">
         <input
       v-for="(otpInput, index) in otpInputs"
